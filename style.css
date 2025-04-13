@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #e0f7fa, #c5e1a5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-size: 2em;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 80%;
+    max-width: 350px; /* Largura máxima para telas grandes */
+}
+
+input {
+    padding: 10px 12px;
+    border: 1px solid #b2dfdb;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #80cbc4;
+    box-shadow: 0 0 8px rgba(0, 200, 192, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #388e3c;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+}
+
+#resultado {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 26.5%;
+    max-width: 400px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+#resultado strong {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+#resultado .erro {
+    color: #d32f2f;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+    .search-container {
+        width: 95%;
+        max-width: none;
+    }
+
+    #resultado {
+        width: 95%;
+        max-width: none;
+    }
+}
+
+/* Media Queries para telas ainda menores */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #resultado {
+        font-size: 0.9em;
+    }
+}

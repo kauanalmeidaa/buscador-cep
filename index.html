@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Buscar CEP</title>
+</head>
+<body>
+    <h1>Buscar CEP</h1>
+    <p>Digite o CEP para buscar informações de endereço.</p>
+    <div class="search-container">
+        <input type="text" id="cep" maxlength="9" oninput="mascararCEP(this)" placeholder="Digite aqui, ex: 63600-000" aria-label="Digite o CEP para buscar" onkeypress="handleKeyPress(event)" />
+        <button onclick="buscarCEP()">Buscar</button>
+    </div>
+
+    <div id="resultado" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
